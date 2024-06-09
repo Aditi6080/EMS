@@ -1,0 +1,10 @@
+D:\C#\EMS\EMS\bin\Debug\EMS.exe.config
+D:\C#\EMS\EMS\bin\Debug\EMS.exe
+D:\C#\EMS\EMS\bin\Debug\EMS.pdb
+D:\C#\EMS\EMS\obj\Debug\EMS.csproj.AssemblyReference.cache
+D:\C#\EMS\EMS\obj\Debug\EMS.Form1.resources
+D:\C#\EMS\EMS\obj\Debug\EMS.Properties.Resources.resources
+D:\C#\EMS\EMS\obj\Debug\EMS.csproj.GenerateResource.cache
+D:\C#\EMS\EMS\obj\Debug\EMS.csproj.CoreCompileInputs.cache
+D:\C#\EMS\EMS\obj\Debug\EMS.exe
+D:\C#\EMS\EMS\obj\Debug\EMS.pdb
