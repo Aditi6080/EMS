@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.register = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.exit = new System.Windows.Forms.Label();
@@ -39,7 +40,6 @@
             this.login_password = new System.Windows.Forms.TextBox();
             this.login_showPassword = new System.Windows.Forms.CheckBox();
             this.login_btn = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,9 +56,21 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(332, 581);
+            this.panel1.Size = new System.Drawing.Size(332, 546);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Location = new System.Drawing.Point(3, 276);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(316, 27);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Employee Management System";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // register
             // 
@@ -69,6 +81,7 @@
             this.register.TabIndex = 9;
             this.register.Text = "REGISTER";
             this.register.UseVisualStyleBackColor = true;
+            this.register.Click += new System.EventHandler(this.register_Click);
             // 
             // label5
             // 
@@ -122,6 +135,7 @@
             this.login_username.Name = "login_username";
             this.login_username.Size = new System.Drawing.Size(454, 37);
             this.login_username.TabIndex = 4;
+            this.login_username.TextChanged += new System.EventHandler(this.login_username_TextChanged);
             // 
             // label4
             // 
@@ -138,6 +152,7 @@
             this.login_password.Location = new System.Drawing.Point(359, 277);
             this.login_password.Multiline = true;
             this.login_password.Name = "login_password";
+            this.login_password.PasswordChar = '*';
             this.login_password.Size = new System.Drawing.Size(454, 37);
             this.login_password.TabIndex = 6;
             this.login_password.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -166,18 +181,7 @@
             this.login_btn.TabIndex = 8;
             this.login_btn.Text = "LOGIN";
             this.login_btn.UseVisualStyleBackColor = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(3, 276);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(316, 27);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Employee Management System";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.login_btn.Click += new System.EventHandler(this.login_btn_Click);
             // 
             // pictureBox1
             // 
@@ -193,7 +197,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(833, 581);
+            this.ClientSize = new System.Drawing.Size(827, 546);
             this.Controls.Add(this.login_btn);
             this.Controls.Add(this.login_showPassword);
             this.Controls.Add(this.login_password);
@@ -205,6 +209,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);

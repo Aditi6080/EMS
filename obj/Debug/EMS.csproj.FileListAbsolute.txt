@@ -8,3 +8,6 @@ D:\C#\EMS\EMS\obj\Debug\EMS.csproj.GenerateResource.cache
 D:\C#\EMS\EMS\obj\Debug\EMS.csproj.CoreCompileInputs.cache
 D:\C#\EMS\EMS\obj\Debug\EMS.exe
 D:\C#\EMS\EMS\obj\Debug\EMS.pdb
+D:\C#\EMS\EMS\bin\Debug\employee.mdf
+D:\C#\EMS\EMS\bin\Debug\employee_log.ldf
+D:\C#\EMS\EMS\obj\Debug\EMS.RegisterForm.resources

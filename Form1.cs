@@ -56,5 +56,22 @@ namespace EMS
         {
 
         }
+
+        private void login_username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void register_Click(object sender, EventArgs e)
+        {
+            RegisterForm regForm = new RegisterForm();
+            regForm.Show();
+            this.Hide();
+        }
+
+        private void login_btn_Click(object sender, EventArgs e)
+        {
+            login_password.PasswordChar = login_showPassword.Checked ? '\0' : '*'; 
+        }
     }
 }
